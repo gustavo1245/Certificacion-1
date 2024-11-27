@@ -14,13 +14,13 @@
         </div>
 
         <div>
-            <button class="bot-1">Inicio de Sesion</button>
+            <button onclick="alerta()" class="bot-1">Inicio de Sesion</button>
             <button class="bot-2">Registro</button>
         </div>
     </header>
     
     <nav class="row-2">
-        <section class="row ajustar">
+        <section class="row">
             <div class="row">
                 <img src="img/libro.png" alt="">
                 <h2>Elige tu libro</h2>
@@ -40,15 +40,15 @@
         </section>
 
         <section class="row fon-1 ajuste ajustar-1">
-            <h4>Ficción</h4>
-            <h4>Historicos</h4>
-            <h4>Tecnologia</h4>
-            <h4>Autoayuda</h4>
-            <h4>Poesia</h4>
+            <a onclick="cambiarTitulo('Ficción')" href=""><h4>Ficción</h4></a>
+            <a onclick="cambiarTitulo('Historicos')" href=""><h4>Historicos</h4></a>
+            <a onclick="cambiarTitulo('Tecnologia')" href=""><h4>Tecnologia</h4></a>
+            <a onclick="cambiarTitulo('Ficción')" href=""><h4>Autoayuda</h4></a>
+            <a onclick="cambiarTitulo('Ficción')" href=""><h4>Poesia</h4></a>
         </section>
 
         <section class="alinear fon-2">
-            <h2>Todos los Libros</h2>
+            <h2 id="titulo" >Todos los Libros</h2>
         </section>
     </nav>
 
@@ -61,7 +61,7 @@
                 <h5>Gabriel García Márquez</h5>
             </div>
 
-            <button class="bot-2">Rentar</button>
+            <button onclick="cambiarestado(this)" class="bot-2">Rentar</button>
         </article>
 
         <!-- sep -->
@@ -74,7 +74,7 @@
                 <h5>Julio Cortáza</h5>
             </div>
 
-            <button class="bot-2">Rentar</button>
+            <button onclick="cambiarestado(this)" class="bot-2">Rentar</button>
         </article>
 
         <!-- sep -->
@@ -87,7 +87,7 @@
                 <h5>Mario Vargas Llosa</h5>
             </div>
 
-            <button class="bot-2">Rentar</button>
+            <button onclick="cambiarestado(this)" class="bot-2">Rentar</button>
         </article>
 
     </main>
@@ -99,6 +99,6 @@
 
 
     
-    <script src="js.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

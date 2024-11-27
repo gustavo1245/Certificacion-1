@@ -95,7 +95,7 @@ footer {
 }
 
 .separar {
-
+    padding-left: ;
 }
 
 .fon-1 {
@@ -111,6 +111,7 @@ footer {
 
 .fon-3 {
     background-color: #eeeeee;
+    width: 300px;
 }
 
 .fon-4 {
@@ -135,4 +136,9 @@ footer {
 
 .imag {
     width: 200px;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
 }
